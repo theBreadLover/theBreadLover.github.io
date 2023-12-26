@@ -10,7 +10,7 @@ body {
     margin: 0;
     outline: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.35em;
+    font-size: 1.20em;
     color: var(--fontColor);
     background-color: var(--mainColor2);
 }
