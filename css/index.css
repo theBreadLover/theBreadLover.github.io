@@ -1,0 +1,40 @@
+:root {
+    --mainColor1: #25AAE1;
+    --mainColor2: #0084CC;
+    --mainColor3: #0C5A93;
+    --secundaryColor: #D5E8F1;
+    --fontColor: #121212;
+}
+
+body {
+    margin: 0;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75em;
+    color: var(--fontColor);
+    background-color: var(--secundaryColor);
+}
+
+.header-container {
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    position: relative;
+    width: 90vw;
+    height: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+
+.app-print-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, var(--mainColor1),var(--mainColor2),var(--mainColor3));
+}

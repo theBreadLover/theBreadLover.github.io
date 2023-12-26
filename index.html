@@ -6,12 +6,21 @@
   <meta name="creator" content="Emmanuel Garcia">
   <meta name="description" content="A more minimalistic an funcional website that helps you send your documents to Miami-Dade printing service.">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">  
   <script src="./js/index.js"></script>
   <title>Printing Service</title>
 </head>
 <body>
+  <header class="header-container">
+    <h1 class="header-title">Miami printing service</h1>
+    <p class="header-explanation">
+      This is a webpage that allows you to send your files to the Miami-Dade public library system. The difference is that it comes with a better an easier interface and you can preview your file before submit it.
+    </p>
+  </header>
   <Main class="main-container">
-    <form class="app-print_container" id="app" method="get" action="#">
+    <form class="app-print-container" id="app" method="get" action="#">
       <fieldset>
         <legend>Information</legend>
         <div class="app-print_location-container">
@@ -21,20 +30,20 @@
 
         <div class="app-print_type-container">
           <label for="app-print_type">Print type:</label>
-          <select name="print_type" id="app-print_type">
-            <option value="BlackWhite" selected>Black & White</option>
-            <option value="color">Color</option>
+          <select name="printerAlias" id="app-print_type">
+            <option value="300345710429" selected>Black & White</option>
+            <option value="300715197766">Color</option>
           </select>
         </div>
 
         <div class="app-print_email-container">
           <label for="app-print_email">Email:</label>
-          <input type="email" name="print_email" id="app-print_email" placeholder="example123@gmail.com">
+          <input type="email" name="email" id="app-print_email" placeholder="example123@gmail.com">
         </div>
 
         <div class="app-print_file-container">
           <label for="app-print_file">File:</label>
-          <input type="file" name="print_file" id="app-print_file">
+          <input type="file" name="attachmentURL" id="app-print_file">
         </div>
 
         <button id="print_submit_button" >Submit</button>
