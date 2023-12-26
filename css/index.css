@@ -67,5 +67,5 @@ body {
 .print-input, ::-webkit-file-upload-button {
     border: none;
     border-radius: 5px;
-    margin: auto;
+    margin: 2px 0;
 }
