@@ -60,7 +60,7 @@ body {
     color: var(--secundaryColor);
 }
 
-.app-print_type-options:hover {
+.app-print_type-options::selection {
     background-color: #083d63;
 }
 
