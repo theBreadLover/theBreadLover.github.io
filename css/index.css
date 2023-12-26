@@ -10,9 +10,9 @@ body {
     margin: 0;
     outline: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.75em;
+    font-size: 1.35em;
     color: var(--fontColor);
-    background-color: var(--secundaryColor);
+    background-color: var(--mainColor2);
 }
 
 .header-container {
@@ -29,6 +29,7 @@ body {
     height: fit-content;
     margin: auto;
     padding: 20px;
+    justify-content: center;
 }
 
 .app-print-container {
@@ -36,5 +37,35 @@ body {
     position: relative;
     flex-direction: column;
     flex-wrap: wrap;
-    background: linear-gradient(to bottom, var(--mainColor1),var(--mainColor2),var(--mainColor3));
+    border-radius: 15px;
+}
+
+.app-print_fieldset {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70vw;
+    height: fit-content;
+    max-height: 250px;
+    max-width: 500px;
+    border: 2px var(--mainColor3) solid;
+    border-radius: 15px;
+}
+
+.app-print_type-options {
+    background-color: var(--mainColor3);
+    color: var(--secundaryColor);
+}
+
+.app-print_type-options:hover {
+    background-color: #083d63;
+}
+
+.print-input, ::-webkit-file-upload-button {
+    border: none;
+    border-radius: 5px;
+    margin: auto;
 }

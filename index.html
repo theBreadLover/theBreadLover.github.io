@@ -21,32 +21,25 @@
   </header>
   <Main class="main-container">
     <form class="app-print-container" id="app" method="get" action="#">
-      <fieldset>
+      <fieldset class="app-print_fieldset">
         <legend>Information</legend>
-        <div class="app-print_location-container">
-          <label for="app-print_location">Printer Location:</label>
-          <select name="print_location" id="app-print_location"></select>
-        </div>
 
-        <div class="app-print_type-container">
-          <label for="app-print_type">Print type:</label>
-          <select name="printerAlias" id="app-print_type">
-            <option value="300345710429" selected>Black & White</option>
-            <option value="300715197766">Color</option>
-          </select>
-        </div>
+        <label for="app-print_location">Printer Location:</label>
+        <select name="print_location" id="app-print_location" class="print-input"></select>
 
-        <div class="app-print_email-container">
-          <label for="app-print_email">Email:</label>
-          <input type="email" name="email" id="app-print_email" placeholder="example123@gmail.com">
-        </div>
+        <label for="app-print_type">Print type:</label>
+        <select name="printerAlias" id="app-print_type" class="print-input">
+          <option value="300345710429" selected class="app-print_type-options">Black & White</option>
+          <option value="300715197766" class="app-print_type-options">Color</option>
+        </select>
 
-        <div class="app-print_file-container">
-          <label for="app-print_file">File:</label>
-          <input type="file" name="attachmentURL" id="app-print_file">
-        </div>
+        <label for="app-print_email">Email:</label>
+        <input type="email" name="email" id="app-print_email" placeholder="example123@gmail.com" class="print-input">
 
-        <button id="print_submit_button" >Submit</button>
+        <label for="app-print_file">File:</label>
+        <input type="file" name="attachmentURL" id="app-print_file" class="print-input">
+
+        <button id="print_submit_button" class="print-input">Submit</button>
       </fieldset>
     </form>
   </Main>
