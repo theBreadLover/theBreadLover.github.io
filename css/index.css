@@ -55,15 +55,6 @@ body {
     border-radius: 15px;
 }
 
-.app-print_type-options {
-    background-color: var(--mainColor3);
-    color: var(--secundaryColor);
-}
-
-.app-print_type-options::selection {
-    background-color: #083d63;
-}
-
 .print-input, ::-webkit-file-upload-button {
     border: none;
     border-radius: 5px;
